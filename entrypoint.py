@@ -10,7 +10,7 @@ def compile(filename: Path, options: list[str]) -> bool:
 
     Returns True if the typst command exited with status 0, False otherwise.
     """
-    command = ["typst"] + ["compile", str(filename)] + options
+    command = ["typst"] + ["compile --root ./", str(filename)] + options
     logging.debug("Running: " + " ".join(command))
 
     result = subprocess.run(command, capture_output=True, text=True)
