@@ -1,4 +1,4 @@
-FROM ghcr.io/typst/typst:v0.12.0
+FROM ghcr.io/typst/typst:v0.13.0
 
 LABEL \
 	org.opencontainers.image.title="Typst GitHub action based on ghcr.io/typst/typst image" \
